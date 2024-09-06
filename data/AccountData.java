@@ -2,8 +2,9 @@ package data;
 
 import entities.Account;
 
+import java.util.ArrayList;
 import java.util.List;
 
 public class AccountData {
-    private static List<Account> accounts;
+    public static List<Account> accounts = new ArrayList<>();
 }

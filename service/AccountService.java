@@ -1,5 +1,6 @@
 package service;
 
+import data.AccountData;
 import entities.Account;
 
 import java.util.Scanner;
@@ -11,7 +12,12 @@ public class AccountService {
         System.out.printf("Nhap Password: ");
         String password = scanner.nextLine();
         System.out.printf("Nhap Email: ");
-        String Email = scanner.nextLine();
+        String email = scanner.nextLine();
+        Account account = new Account(username, password, email );
+        AccountData.accounts.add(account);
 
+        return account;
     }
+
+    
 }
